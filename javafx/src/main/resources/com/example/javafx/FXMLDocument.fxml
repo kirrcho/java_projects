@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafx.FXMLDocumentController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <AnchorPane>
+        <children>
+            <TextField fx:id="firstElement" layoutX="15.0" maxWidth="80.0"></TextField>
+            <ComboBox fx:id="operators" layoutX="100.0" promptText="choose"/>
+            <TextField fx:id="secondElement" layoutX="190.0" maxWidth="80.0"></TextField>
+        </children>
+    </AnchorPane>
+    <Button text="Calculate" onAction="#onCalculateButtonCLick"/>
+    <TextField fx:id="result" ></TextField>
+</VBox>
